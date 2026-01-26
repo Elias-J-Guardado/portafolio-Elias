@@ -21,19 +21,22 @@
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="">Inicio</a>
+                            <a class="nav-link active" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Sobre mi</a>
+                            <a class="nav-link" href="#sobre-mi">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Curriculum</a>
+                            <a class="nav-link" href="#experiencia">Experiencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Contacto</a>
+                            <a class="nav-link" href="#redes-sociales">Redes sociales</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Redes sociales</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        <li>
+                            <button id="btn-curriculum" class="btn btn-primary" type="button">Curriculum</button>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +44,7 @@
         </nav>
     </header>
     <main>
-        <section class="bg-light py-5">
+        <section id="sobre-mi" class="bg-light py-5">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center text-md-start">
@@ -58,7 +61,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="experiencia">
             <div class="row">
                 <div class="col-md-6">
                     <div class="card shadow-sm mb-4">
@@ -151,7 +154,7 @@
 
             </div>
         </section>
-        <section>
+        <section id="redes-sociales" >
             <div class="container text-center">
                 <h2 class="mb-4 mt-4">Redes sociales</h2>
                 <div class="row g-4 justify-content-center">
@@ -213,7 +216,13 @@
             </form>
         </section>
     </main>
+    <dialog>
+        <div class="modal">
+
+        </div>
+    </dialog>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/app.js"></script>
 </body>
 
 </html>
