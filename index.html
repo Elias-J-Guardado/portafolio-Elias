@@ -221,18 +221,19 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="curriculum-title">Modal title</h5>
+                <h5 class="modal-title" id="curriculum-title">Curriculum</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <!-- <span aria-hidden="true">&times;</span> -->
                 </button>
             </div>
             <div class="modal-body">
-
+                <embed id="curriculum-preview" src="./src/pdf/Luis_Elias_Guardado_Junior_Web_Developer_Resume.pdf#toolbar=0" type="application/pdf" width="100%" height="500px" style="border:none;"></embed>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Descargar Curriculum</button>
+                <button id="descargar" type="button" class="btn btn-primary">Descargar Curriculum</button>
             </div>
+            <div id="alerta"></div>
         </div>
     </div>
    </div>
