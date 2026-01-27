@@ -1,6 +1,27 @@
 const modal = document.querySelector('#modal');
 const btnDescargar = document.querySelector('#descargar');
 
+// api rest de correo
+    const btnEnviar = document.querySelector('#btn-enviar');
+
+    document.querySelector('#formulario')
+    .addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        btnEnviar.value = "Enviando...";
+
+        const serviceID = 'default_service';
+        const templateID =  'template_4d9qcag';
+
+        emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btnEnviar.value = 'Send Email';
+            alerta('Correo Enviado!!!', 'alerta-formulario', 'text-success');
+        },(err) => {
+            btnEnviar.value = 'Send Email';
+            alerta(JSON.stringify(err), 'alerta-formulario', 'text-danger');
+        });
+    });
 
 const descargaLink = "./src/pdf/Luis_Elias_Guardado_Junior_Web_Developer_Resume.pdf";
 
@@ -8,7 +29,7 @@ const descargaLink = "./src/pdf/Luis_Elias_Guardado_Junior_Web_Developer_Resume.
 btnDescargar.addEventListener('click', descargarCurriculum);
 
 function descargarCurriculum() {
-    alerta('Descargando...');
+    alerta('Descargando...', 'alerta-modal');
 
     const link = document.createElement("a");
     link.style.display = "none";
@@ -16,16 +37,16 @@ function descargarCurriculum() {
     link.setAttribute("download", "");
     document.body.appendChild(link);
     link.click();
-    document.removeChild(link);
+    // document.removeChild(link);
 }
 
-function alerta(texto) {
-    const existeAlerta = document.querySelector('#alerta')
+function alerta(texto, contenedorId, estilo) {
+    const existeAlerta = document.querySelector(`#${contenedorId}`);
 
     limpiarHTML(existeAlerta);
 
     const alerta = document.createElement('P');
-    alerta.classList.add('text-center', 'text-danger');
+    alerta.classList.add('text-center', estilo);
     alerta.textContent = texto;
 
     existeAlerta.appendChild(alerta);
@@ -40,3 +61,5 @@ function limpiarHTML(limpiar) {
         limpiar.removeChild(limpiar.firstChild);
     }
 }
+
+
