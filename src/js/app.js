@@ -76,5 +76,9 @@ function llamarApi(e) {
             btnEnviar.value = 'Send Email';
             alerta(JSON.stringify(err), 'alerta-formulario', 'text-danger');
         });
+
+        setTimeout(() => {
+            formulario.reset();
+        }, 3000);
 }
 
