@@ -4,24 +4,10 @@ const btnDescargar = document.querySelector('#descargar');
 // api rest de correo
     const btnEnviar = document.querySelector('#btn-enviar');
 
-    document.querySelector('#formulario')
-    .addEventListener('submit', function (e) {
-        e.preventDefault();
+    const formulario = document.querySelector('#formulario')
 
-        btnEnviar.value = "Enviando...";
 
-        const serviceID = 'default_service';
-        const templateID =  'template_4d9qcag';
-
-        emailjs.sendForm(serviceID, templateID, this)
-        .then(() => {
-            btnEnviar.value = 'Send Email';
-            alerta('Correo Enviado!!!', 'alerta-formulario', 'text-success');
-        },(err) => {
-            btnEnviar.value = 'Send Email';
-            alerta(JSON.stringify(err), 'alerta-formulario', 'text-danger');
-        });
-    });
+    formulario.addEventListener('submit', llamarApi);
 
 const descargaLink = "./src/pdf/Luis_Elias_Guardado_Junior_Web_Developer_Resume.pdf";
 
@@ -62,4 +48,33 @@ function limpiarHTML(limpiar) {
     }
 }
 
+
+function llamarApi(e) {
+ const nombre = document.querySelector('#name').value;
+ const asunto = document.querySelector('#asunto').value;
+ const email = document.querySelector('#email').value;
+ const mensaje = document.querySelector('#message').value;
+
+ if (!nombre || !asunto || !email || !mensaje) {
+    e.preventDefault();
+    alerta('Todos los espacios son obligatorios', 'alerta-formulario', 'text-danger');
+    return;
+ }
+
+    e.preventDefault();
+
+        btnEnviar.value = "Enviando...";
+
+        const serviceID = 'default_service';
+        const templateID =  'template_4d9qcag';
+
+        emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btnEnviar.value = 'Send Email';
+            alerta('Correo Enviado!!!', 'alerta-formulario', 'text-success');
+        },(err) => {
+            btnEnviar.value = 'Send Email';
+            alerta(JSON.stringify(err), 'alerta-formulario', 'text-danger');
+        });
+}
 
