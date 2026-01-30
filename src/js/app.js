@@ -82,3 +82,29 @@ function llamarApi(e) {
         }, 3000);
 }
 
+
+//funciones extra
+
+function bloquearBoton() {
+    
+}
+
+function contadorFoto() {
+    
+}
+
+function llamarLocalStorage() {
+    
+}
+
+function eliminarEjemplo() {
+    
+}
+
+function borrarEjemplo() {
+    
+}
+
+function mostrarEjemplo() {
+    
+}
