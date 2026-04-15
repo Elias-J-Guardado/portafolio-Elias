@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/style.css"> -->
+    <link rel="shortcut icon" href="/assets/favicon-BVBq93zx.ico" type="image/x-icon">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('hd-H15cB2v3eIPDpK')
+    </script>
+  <script type="module" crossorigin src="/assets/index-D9-mdqbd.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-qYIXOzJQ.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand">Elias Guardado</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre-mi">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Educación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#redes-sociales">Redes sociales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        <li>
+                            <button id="enviar" class="btn btn-primary" type="button" data-bs-toggle="modal"
+                                data-bs-target="#modal-curriculum">Curriculum</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre-mi" class="bg-light py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <h1 class="fw-bold">Elias Guardado</h1>
+                        <p class="text-muted">Desarrollador web junior, con mucho entusiasmo por aprender y mejorar</p>
+                        <a href="#contacto" class="btn btn-primary mt-3 mb-3">Contactame</a>
+                    </div>
+
+
+                    <div class="col-md-6 text-center">
+                        <img src="/assets/portafolio-CtqtYsLr.jpeg" alt="Mi_foto" class="img-fluid rounded-circle "
+                            width="250" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="habilidades">
+            <div class="conatiner">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body ">
+                                <h5 class="card-title text-center">Educación</h5>
+                                <ul class="list-unstyled text-center">
+                                    <li><strong>ITCHA</strong>-Tecnico en computación (2020)</li>
+                                    <li><strong>ALURA LATAM</strong>-Data Scientist (2026)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="proyectos">
+                <h3 class="text-center mt-4">Proyectos</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-2">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <a target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/Elias-J-Guardado/globosyfloresAR"
+                                class="mb-1 text-center text-decoration-none"
+                                style="cursor: pointer;"><strong>Globos&FloresAR</strong></a>
+                            <p class="text-muted small text-center">Landing page creada con HTML.</p>
+                            <p class="text-muted small text-center">Tailwind y javascript.</p>
+                            <p class="text-muted small text-center">Con manejo de API de Emailjs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-2">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <a target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/javigt1971/flightontime"
+                                class="mb-1 text-center text-decoration-none"
+                                style="cursor: pointer;"><strong>FlightOnTime</strong></a>
+                            <p class="text-muted small text-center">Programación de Frontend usando html, tailwind y
+                                vite.</p>
+                            <p class="text-muted small text-center">Analisis exploratirio de datos EDA.</p>
+                            <p class="text-muted small text-center">Integración de frontend con API de predicción de
+                                vuelos retrasados.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 mt-2">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <a target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/Elias-J-Guardado/Sys-Inventario"
+                                class="mb-1 text-center text-decoration-none"
+                                style="cursor: pointer;"><strong>Sys-Inventario</strong></a>
+                            <p class="text-muted small text-center">Sistema de manejo de inventario contruido sobre
+                                React + Vite.</p>
+                            <p class="text-muted small text-center">Base de datos en tiempo real con Supabase.</p>
+                            <p class="text-muted small text-center">Arquitectura component-based organizada por
+                                caracteristica/funcionaliad.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section>
+            <div class="container text-center">
+                <h2 class="mb-4 mt-4">Habilidades Técnicas</h2>
+                <div class="row g-4 justify-content-center">
+                    <!-- inicia card -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                <img src="/assets/html-B8amFG0d.png" alt="html" class="img-fluid mb-2"
+                                    style="max-width: 60px;">
+                                <p class="mb-0 fw-semibold">HTML</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- inicia card -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                <img src="/assets/css-FiPL0GMq.png" alt="CSS" class="img-fluid mb-2" style="max-width: 60px;">
+                                <p class="mb-0 fw-semibold">CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- inicia card -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                <img src="/assets/TWCSS-BSwZPheo.png" alt="Tailwind" class="img-fluid mb-2"
+                                    style="max-width: 60px;">
+                                <p class="mb-0 fw-semibold">Tailwind</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- inicia card -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                <img src="/assets/JavaScript-logo-B2gqmNKf.png" alt="JavaScript" class="img-fluid mb-2"
+                                    style="max-width: 60px;">
+                                <p class="mb-0 fw-semibold">JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- inicia card -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                <img src="/assets/react-Br-UUQWD.png" alt="React" class="img-fluid mb-2"
+                                    style="max-width: 60px;">
+                                <p class="mb-0 fw-semibold">React</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- inicia card -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                <img src="/assets/bootstrap-BkpnUyuR.png" alt="Bootstrap" class="img-fluid mb-2"
+                                    style="max-width: 60px;">
+                                <p class="mb-0 fw-semibold">Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2></h2>
+                <div>
+
+                </div>
+            </div>
+        </section>
+        <section id="redes-sociales">
+            <div class="container text-center">
+                <h2 class="mb-4 mt-4">Redes sociales</h2>
+                <div class="row g-4 justify-content-center">
+                    <!-- card -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                <img src="/assets/linkedIn-ML0yMBVW.png" alt="Linkedin" class="img-fluid mb-2"
+                                    style="max-width: 60px;">
+                                <a class="social-link" target="_blank" rel="noopener noreferrer"
+                                    href="https://www.linkedin.com/in/elias-jimenez-guardado">Linkedin</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                <img src="/assets/git-u_X4fabj.png" alt="GitHub" class="img-fluid mb-2"
+                                    style="max-width: 60px;">
+                                <a class="social-link" target="_blank" rel="noopener noreferrer"
+                                    href="https://github.com/Elias-J-Guardado">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                <img src="/assets/x-DLHV17Kj.png" alt="Twitter" class="img-fluid mb-2"
+                                    style="max-width: 60px;">
+                                <a class="social-link" target="_blank" rel="noopener noreferrer"
+                                    href="https://x.com/eliasGuarDev">X (Twitter)</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="py-5" id="contacto">
+            <div class="container">
+                <h2 class="text-center mb-4">Contacto</h2>
+            </div>
+
+            <form id="formulario" class="col-md-6 mx-auto">
+                <div class="mb-3">
+                    <label for="formulario-label">Nombre</label>
+                    <input id="name" name="name" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="formulario-label">Asunto</label>
+                    <input id="asunto" name="asunto" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="formulario-label">Correo Electronico</label>
+                    <input id="email" name="email" type="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="formulario-form">Mensaje</label>
+                    <textarea class="form-control" name="message" style="resize: none;" rows="4"
+                        id="message"></textarea>
+                </div>
+                <button id="btn-enviar" class="btn btn-primary w-100" type="submit">Enviar</button>
+                <div id="alerta-formulario"></div>
+            </form>
+        </section>
+    </main>
+    <!-- modal -->
+    <div class="modal fade" id="modal-curriculum" tabindex="1" role="dialog" aria-labelledby="modal-curriculum"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="curriculum-title">Curriculum</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <!-- <span aria-hidden="true">&times;</span> -->
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <embed id="curriculum-preview"
+                        src="/assets/Luis_Elias_Guardado_Junior_Web_Developer_Resume-rXbxOA7J.pdf#toolbar=0"
+                        type="application/pdf" width="100%" height="500px" style="border:none;"></embed>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                    <button id="descargar" type="button" class="btn btn-primary">Descargar Curriculum</button>
+                </div>
+                <div id="alerta-modal"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="./src/js/app.js"></script> -->
+    </script>
+</body>
+
+</html>
