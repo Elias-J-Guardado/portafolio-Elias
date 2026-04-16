@@ -26,26 +26,30 @@
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="./index.html">Inicio</a>
+                            <a class="nav-link active" href="./index.html" data-i18n="nav.home">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#sobre-mi">Sobre mi</a>
+                            <a class="nav-link" href="#sobre-mi" data-i18n="nav.about">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#habilidades">Educación</a>
+                            <a class="nav-link" href="#habilidades" data-i18n="nav.education">Educación</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                            <a class="nav-link" href="#proyectos" data-i18n="nav.projects">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#redes-sociales">Redes sociales</a>
+                            <a class="nav-link" href="#redes-sociales" data-i18n="nav.social_media">Redes sociales</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a class="nav-link" href="#contacto" data-i18n="nav.contact">Contacto</a>
                         </li>
                         <li>
                             <button id="enviar" class="btn btn-primary" type="button" data-bs-toggle="modal"
                                 data-bs-target="#modal-curriculum">Curriculum</button>
+                        </li>
+                        <li class="nav-item d-flex align-items-center gap-1 ms-2">
+                            <button class="btn btn-sm btn-outline-secundary lang-btn" data-lang="es">ES</button>
+                            <button class="btn btn-sm btn-outline-secundary lang-btn" data-lang="en">EN</button>
                         </li>
                     </ul>
                 </div>
@@ -57,9 +61,9 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center text-md-start">
-                        <h1 class="fw-bold">Elias Guardado</h1>
-                        <p class="text-muted">Desarrollador web junior, con mucho entusiasmo por aprender y mejorar</p>
-                        <a href="#contacto" class="btn btn-primary mt-3 mb-3">Contactame</a>
+                        <h1 data-i18n="contact.name" class="fw-bold">Elias Guardado</h1>
+                        <p data-i18n="hero.subtitle" class="text-muted">Desarrollador web junior, con mucho entusiasmo por aprender y mejorar</p>
+                        <a href="#contacto" class="btn btn-primary mt-3 mb-3" data-i18n="hero.cta">Contactame</a>
                     </div>
 
 
@@ -71,15 +75,15 @@
             </div>
         </section>
         <section id="habilidades">
-            <div class="conatiner">
+            <div class="container mt-4">
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-lg-4">
                         <div class="card shadow-sm">
                             <div class="card-body ">
-                                <h5 class="card-title text-center">Educación</h5>
+                                <h5 class="card-title text-center" data-i18n="skills.education">Educación</h5>
                                 <ul class="list-unstyled text-center">
-                                    <li><strong>ITCHA</strong>-Tecnico en computación (2020)</li>
-                                    <li><strong>ALURA LATAM</strong>-Data Scientist (2026)</li>
+                                    <li data-i18n="education.itcha" data-i18n-html><strong>ITCHA</strong>-Tecnico en computación (2020)</li>
+                                    <li data-i18n="education.alura" data-i18n-html><strong>ALURA LATAM</strong>-Data Scientist (2026)</li>
                                 </ul>
                             </div>
                         </div>
@@ -89,7 +93,7 @@
         </section>
         <section>
             <div id="proyectos">
-                <h3 class="text-center mt-4">Proyectos</h3>
+                <h3 class="text-center mt-4" data-i18n="project.title">Proyectos</h3>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-2">
@@ -99,9 +103,9 @@
                                 href="https://github.com/Elias-J-Guardado/globosyfloresAR"
                                 class="mb-1 text-center text-decoration-none"
                                 style="cursor: pointer;"><strong>Globos&FloresAR</strong></a>
-                            <p class="text-muted small text-center">Landing page creada con HTML.</p>
-                            <p class="text-muted small text-center">Tailwind y javascript.</p>
-                            <p class="text-muted small text-center">Con manejo de API de Emailjs.</p>
+                            <p class="text-muted small text-center" data-i18n="globos&floresar.description">Landing page creada con HTML.</p>
+                            <p class="text-muted small text-center" data-i18n="globos&floresar.tecnology">Tailwind y javascript.</p>
+                            <p class="text-muted small text-center" data-i18n="globos&floresar.api">Con manejo de API de Emailjs.</p>
                         </div>
                     </div>
                 </div>
@@ -113,11 +117,10 @@
                                 href="https://github.com/javigt1971/flightontime"
                                 class="mb-1 text-center text-decoration-none"
                                 style="cursor: pointer;"><strong>FlightOnTime</strong></a>
-                            <p class="text-muted small text-center">Programación de Frontend usando html, tailwind y
+                            <p class="text-muted small text-center" data-i18n="flightontime.tecnology">Programación de Frontend usando html, tailwind y
                                 vite.</p>
-                            <p class="text-muted small text-center">Analisis exploratirio de datos EDA.</p>
-                            <p class="text-muted small text-center">Integración de frontend con API de predicción de
-                                vuelos retrasados.</p>
+                            <p class="text-muted small text-center" data-i18n="flightontime.eda">Analisis exploratirio de datos EDA.</p>
+                            <p class="text-muted small text-center" data-i18n="flightontime.api">Integración de frontend con API de predicción de vuelos retrasados.</p>
                         </div>
                     </div>
                 </div>
@@ -130,11 +133,9 @@
                                 href="https://github.com/Elias-J-Guardado/Sys-Inventario"
                                 class="mb-1 text-center text-decoration-none"
                                 style="cursor: pointer;"><strong>Sys-Inventario</strong></a>
-                            <p class="text-muted small text-center">Sistema de manejo de inventario contruido sobre
-                                React + Vite.</p>
-                            <p class="text-muted small text-center">Base de datos en tiempo real con Supabase.</p>
-                            <p class="text-muted small text-center">Arquitectura component-based organizada por
-                                caracteristica/funcionaliad.</p>
+                            <p class="text-muted small text-center" data-i18n="sys_inventory.description">Sistema de manejo de inventario contruido sobre React + Vite.</p>
+                            <p class="text-muted small text-center" data-i18n="sys_inventory.database">Base de datos en tiempo real con Supabase.</p>
+                            <p class="text-muted small text-center" data-i18n="sys_inventory.architecture">Arquitectura component-based organizada por caracteristica/funcionaliad.</p>
                         </div>
                     </div>
                 </div>
@@ -144,7 +145,7 @@
         </section>
         <section>
             <div class="container text-center">
-                <h2 class="mb-4 mt-4">Habilidades Técnicas</h2>
+                <h2 class="mb-4 mt-4" data-i18n="skills.title">Habilidades Técnicas</h2>
                 <div class="row g-4 justify-content-center">
                     <!-- inicia card -->
                     <div class="col-6 col-md-4 col-lg-2">
@@ -220,7 +221,7 @@
         </section>
         <section id="redes-sociales">
             <div class="container text-center">
-                <h2 class="mb-4 mt-4">Redes sociales</h2>
+                <h2 class="mb-4 mt-4" data-i18n="social.title">Redes sociales</h2>
                 <div class="row g-4 justify-content-center">
                     <!-- card -->
                     <div class="col-6 col-md-4 col-lg-2">
@@ -261,28 +262,28 @@
         </section>
         <section class="py-5" id="contacto">
             <div class="container">
-                <h2 class="text-center mb-4">Contacto</h2>
+                <h2 class="text-center mb-4" data-i18n="contact.title">Contacto</h2>
             </div>
 
             <form id="formulario" class="col-md-6 mx-auto">
                 <div class="mb-3">
-                    <label for="formulario-label">Nombre</label>
+                    <label for="formulario-label" data-i18n="contact.name">Nombre</label>
                     <input id="name" name="name" type="text" class="form-control">
                 </div>
                 <div class="mb-3">
-                    <label for="formulario-label">Asunto</label>
+                    <label for="formulario-label" data-i18n="contact.subject">Asunto</label>
                     <input id="asunto" name="asunto" type="text" class="form-control">
                 </div>
                 <div class="mb-3">
-                    <label for="formulario-label">Correo Electronico</label>
+                    <label for="formulario-label" data-i18n="contact.email">Correo Electronico</label>
                     <input id="email" name="email" type="email" class="form-control">
                 </div>
                 <div class="mb-3">
-                    <label for="formulario-form">Mensaje</label>
+                    <label for="formulario-form" data-i18n="contact.message">Mensaje</label>
                     <textarea class="form-control" name="message" style="resize: none;" rows="4"
                         id="message"></textarea>
                 </div>
-                <button id="btn-enviar" class="btn btn-primary w-100" type="submit">Enviar</button>
+                <button id="btn-enviar" class="btn btn-primary w-100" type="submit" data-i18n="contact.send">Enviar</button>
                 <div id="alerta-formulario"></div>
             </form>
         </section>
@@ -293,7 +294,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="curriculum-title">Curriculum</h5>
+                    <h5 class="modal-title" id="curriculum-title" data-i18n="resume.title">Curriculum</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                         <!-- <span aria-hidden="true">&times;</span> -->
                     </button>
@@ -304,8 +305,8 @@
                         type="application/pdf" width="100%" height="500px" style="border:none;"></embed>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                    <button id="descargar" type="button" class="btn btn-primary">Descargar Curriculum</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" data-i18n="resume.close">Cerrar</button>
+                    <button id="descargar" type="button" class="btn btn-primary" data-i18n="resume.download">Descargar Curriculum</button>
                 </div>
                 <div id="alerta-modal"></div>
             </div>
