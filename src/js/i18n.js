@@ -29,6 +29,22 @@ const translations = {
         "flightontime.eda": "Analisis exploratirio de datos EDA.",
         "flightontime.api": "Integración de frontend con API de predicción de vuelos retrasados.",
 
-        //
+        // Sys-Inventario
+        "sys_inventory.description": "Sistema de manejo de inventario contruido sobre React + Vite.",
+        "sys_inventory.database": "Base de datos en tiempo real con Supabase.",
+        "sys_inventory.architecture": "Arquitectura component-based organizada por caracteristica/funcionaliad.",
+    
+        // Habilidades
+        "skills.title": "Habilidades Técnicas",
+
+        // Redes sociales
+        "social.title": "Redes sociales",
+
+        // Contacto
+        "contact.title": "Contacto",
+        "contact.name": "Nombre",
+        "contact.subject": "Asunto",
+        "contact.email": "Correo Electronico",
+        "contact.message": "Mensaje",
     }
 }
