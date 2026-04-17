@@ -1,13 +1,15 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import 'bootstrap'
+import 'bootstrap';
 
-import './css/style.css'
+import './css/style.css';
 
-import './js/app.js'
+import './js/app.js';
+
+import './js/i18n.js';
 
 
 
 
 
-console.log('Vite y bootstrao cargados y listos');
+console.log('Vite y bootstrap cargados y listos');
