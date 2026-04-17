@@ -13,8 +13,10 @@ const translations = {
         "hero.cta": "Contactame",
         
         // Estudios
-        "education.itcha": "<strong>ITCHA</strong>-Tecnico en computación (2020)",
-        "education.alura": "<strong>ALURA LATAM</strong>-Data Scientist (2026)",
+        "skills.education": "Educación",
+
+        "education.itcha": "Tecnico en computación (2020)",
+        "education.alura": "Data Scientist (2026)",
 
         // Proyectos
         "project.title": "Projectos",
@@ -46,5 +48,105 @@ const translations = {
         "contact.subject": "Asunto",
         "contact.email": "Correo Electronico",
         "contact.message": "Mensaje",
+        "contact.send": "Enviar",
+
+        // Modal
+        "resume.title": "Curriculum",
+        "resume.close": "Cerrar",
+        "resume.download": "Descargar Curriculum",
+    },
+
+    en: {
+        // Nav
+        "nav.home": "Home",
+        "nav.about": "About me",
+        "nav.education": "Education",
+        "nav.projects": "Projects",
+        "nav.social_media": "Social media",
+        "nav.contact": "Contact",
+
+        // Hero
+        "hero.subtitle": "Junior web developer, enthusiastic about learning and growing every day",
+        "hero.cta": "Contact me",
+        
+        // Estudios
+        "skills.education": "Education",
+
+        "education.itcha": "Computer technician (2020)",
+        "education.alura": "Data Scientist (2026)",
+
+        // Proyectos
+        "project.title": "Projects",
+
+        // Globos&FloresAR
+        "globos&floresar.description": "Landing page built with HTML.",
+        "globos&floresar.tecnology": "Tailwind CSS and JavaScript.",
+        "globos&floresar.api": "EmailJS API integration.",
+
+        // FlightOnTime
+        "flightontime.tecnology": "Frontend development using HTML, Tailwind and Vite.",
+        "flightontime.eda": "Exploratory Data Analysis (EDA).",
+        "flightontime.api": "Frontend integration with a flight delay prediction API.",
+
+        // Sys-Inventario
+        "sys_inventory.description": "Inventory management system built with React + Vite.",
+        "sys_inventory.database": "Real-time database with Supabase.",
+        "sys_inventory.architecture": "Component-based architecture organized by feature/functionality.",
+    
+        // Habilidades
+        "skills.title": "Tecnical Skills",
+
+        // Redes sociales
+        "social.title": "Social media",
+
+        // Contacto
+        "contact.title": "Contact",
+        "contact.name": "Name",
+        "contact.subject": "Subject",
+        "contact.email": "Email address",
+        "contact.message": "Message",
+        "contact.send": "Enviar",
+
+        // Modal
+        "resume.title": "Resume",
+        "resume.close": "Close",
+        "resume.download": "Download resume",
     }
+}
+
+let idiomaActual = localStorage.getItem("lang") ?? "es";
+
+// selectores
+const idioma = document.querySelectorAll("[data-i18n]");
+const btnLang = document.querySelectorAll(".lang-btn");
+
+function aplicarTraduccion(lang) {
+    console.log("Aplicando idioma: ", lang);
+    console.log("Elementos: ", idioma.length);
+
+    idioma.forEach(item => {
+        const llave = item.dataset.i18n;
+        const valor = translations[lang][llave];
+        console.log("Clave: ", llave, "| Valor: ", valor);
+        if (valor) {
+            item.textContent = valor;
+        }
+    });
+
+    document.documentElement.lang = lang;
+
+    btnLang.forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.lang === lang);
+    })
+}
+
+export function setidioma(lang) {
+    if (!translations[lang]) return;
+    idiomaActual = lang;
+    localStorage.setItem("lang", lang);
+    aplicarTraduccion(lang);
+}
+
+export function iniciarIdioma() {
+    aplicarTraduccion(idiomaActual);
 }
