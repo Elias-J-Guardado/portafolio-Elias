@@ -3,7 +3,7 @@
 Portafolio personal desarrollado con **HTML, Bootstrap y JavaScript vanilla**, con soporte multilenguaje (ES/EN) e integración con EmailJS para el formulario de contacto.
 
 ## Demo
- > [https://portafolio-elias-guardado.netlify.app/](Deploy en Netlify)
+ - [Deploy en Netlify](https://portafolio-elias-guardado.netlify.app/)
 
  ## Estrucctura del proyecto
 
@@ -55,6 +55,30 @@ PORTAFOLIO/
 | Vite | Bundler / herramienta de desarrollo |
 
 ---
+## Instalación y uso local
+
+### Prerequisitos
+
+- Node.js >= 18
+- npm
+
+### Pasos
+
+```bash
+# Clona el repositorio
+git clone https://github.com/Elias-J-Guardado/portafolio.git
+
+# Entra al directorio
+cd portafolio
+
+# Instala las dependencias
+npm install
+
+# Inicia el servidor de desarrollo
+npm run dev
+```
+
+---
 
 ## Configuración de EmailJS
 
@@ -73,3 +97,44 @@ emailjs.init('TU_PUBLIC_KEY')
 const serviceID = 'TU_SERVICE_ID';
 const templateID = 'TU_TEMPLATE_ID';
 ```
+
+## Scrpits disponibles
+
+```bash
+npm run dev      # Servidor de desarrollo con Vite
+npm run build    # Build de producción
+npm run preview  # Vista previa del build
+```
+
+---
+
+## Internacinalización (i18n)
+
+Este portafolio soporta cambio dinámico de idioma entre **Español** e **Inglés** mediante botones en la navbar. La lógica está en `src/js/i18n.js`, usando atributos `data-i18n` en el HTML.
+
+---
+
+## Proyectos destacados
+
+### [Globos&FloresAR](https://github.com/Elias-J-Guardado/globosyfloresAR)
+Landing page para negocio local. Construida con HTML, Tailwind CSS y JavaScript, con integración de EmailJS.
+
+### [FlightOnTime](https://github.com/javigt1971/flightontime)
+Frontend para sistema de predicción de vuelos retrasados. Incluye EDA (Análisis Exploratorio de Datos) e integración con API de machine learning. Stack: HTML, Tailwind, Vite.
+
+### [Sys-Inventario](https://github.com/Elias-J-Guardado/Sys-Inventario)
+Sistema de gestión de inventario construido con React + Vite. Base de datos en tiempo real con Supabase. Arquitectura component-based organizada por feature/funcionalidad.
+
+---
+
+## Licencia
+
+Este proyecto es de uso personal. Siéntete libre de usarlo como referencia o inspiración.
+
+---
+
+## Contacto
+- LinkedIn: [elias-jimenez-guardado](https://www.linkedin.com/in/elias-jimenez-guardado)
+- GitHub: [Elias-J-Guardado](https://github.com/Elias-J-Guardado)
+- X: [@eliasGuarDev](https://x.com/eliasGuarDev)
+
