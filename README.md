@@ -1,3 +1,5 @@
+[English version](./README.en.md)
+
 # portafolio - Elías Guardado
 
 Portafolio personal desarrollado con **HTML, Bootstrap y JavaScript vanilla**, con soporte multilenguaje (ES/EN) e integración con EmailJS para el formulario de contacto.
